@@ -15,6 +15,10 @@ function Project(prop) {
                     <li>Tools here</li>
                     <li>Tools here</li>
                     <li>Tools here</li>
+                    <li>Tools here</li>
+                    <li>Tools here</li>
+                    <li>Tools here</li>
+                    <li>Tools here</li>
                 </ul>
             </div>
             <a id="git-link" href={prop.link} target="_blank">{prop.link}</a>
