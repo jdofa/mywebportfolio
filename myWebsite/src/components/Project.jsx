@@ -1,6 +1,10 @@
 import React from "react"
 
 function Project(prop) {
+    const myTools = prop.tools.map((tool) => {
+        return (<li>{tool}</li>)
+    })
+
     return(
         <div className="project-wrapper">
             <p className="project-anchor" id={prop.anchor}></p>
@@ -11,14 +15,7 @@ function Project(prop) {
             <div id="tools-wrapper">
                 <h3 className="project-title">Tools Used</h3>
                 <ul>
-                    <li>Tools here</li>
-                    <li>Tools here</li>
-                    <li>Tools here</li>
-                    <li>Tools here</li>
-                    <li>Tools here</li>
-                    <li>Tools here</li>
-                    <li>Tools here</li>
-                    <li>Tools here</li>
+                    {myTools}
                 </ul>
             </div>
             <a id="git-link" href={prop.link} target="_blank">{prop.link}</a>

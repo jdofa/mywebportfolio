@@ -61,8 +61,8 @@ html, body{
 
 /* About */
 #profile-pic{
-  width: 200px;
-  height: 300px;
+  width: 12vw;
+  height: 24vw;
   border-radius: 50%;
   margin-top: 5%;
   box-shadow: 5px 2px #147efb, 10px 4px #0464d5, 15px 6px #034ba0, 20px 8px #02326b, 25px 10px #011935;
@@ -110,8 +110,46 @@ html, body{
   bottom: 0px;
   height: 40vh;
   width: 60vw;
-  border-top:2px dashed #147efb;
 
+  font-size: 1.5em;
+}
+#clock-time{
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.time{
+  color: #147efb;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#ampm{
+  margin-left: 20px;
+}
+
+
+#clock-day{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+div#clock-day > p{
+  margin-left: 20px;
+}
+
+#colon{
+  margin: 0px 10px;
+}
+
+.temp{
+  color: #147efb;
 }
 
 /* Project */
