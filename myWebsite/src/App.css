@@ -3,20 +3,32 @@
 }
 
 html, body{
-  font-family: sans-serif;
+  font-family:IBM Plex Sans, helvetica;
   background-color: #242526;
   color: #FDFFF5;
 }
 
 #greeter{
-  font-size: 1vw;
+  font-size: 2vw;
   font-weight: bold;
+  
 }
 
 #my-name{
   font-size: 5vw;
   font-weight: bold;
-  color: #fc3d39;
+  color: #147efb;
+  margin-top: 10px;
+  background:
+    linear-gradient(
+      to right,
+      #1480fb00,
+      #147efb,
+      #1480fb00
+  );
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
 }
 
 #hero{
@@ -36,7 +48,7 @@ html, body{
   flex-direction: column;
   justify-content: top;
   align-items: center;
-  /*background-color: blue;*/
+  border-left: 2px dashed #147efb;
   width: 40vw;
   height: 100vh;
   position: absolute;
@@ -52,15 +64,21 @@ html, body{
   width: 200px;
   height: 300px;
   border-radius: 50%;
-  margin-top: 10%;
-  box-shadow: -2px -2px #fc3d39, -1px 1px rgba(255, 0, 179, 0.519), 1px -1px rgba(255, 0, 179, 0.519), 2px 2px #147efb;
+  margin-top: 5%;
+  box-shadow: 5px 2px #147efb, 10px 4px #0464d5, 15px 6px #034ba0, 20px 8px #02326b, 25px 10px #011935;
+}
+
+#currAge{
+  font-size: 1em;
+  color: #011935;
 }
 
 #bio{
-  font-size: 1.5em;
+  text-align: center;
+  font-size: 1em;
   margin-top: 10%;
   background-color: #147efb;
-  padding: 20px;
+  padding: 18px;
   border-radius: 20px 20px 0px 20px;
   width: 70%;
 }
@@ -92,23 +110,65 @@ html, body{
   bottom: 0px;
   height: 40vh;
   width: 60vw;
+  border-top:2px dashed #147efb;
 
 }
 
 /* Project */
 .project-wrapper{
-  width: 100%;
-  background-color: blue;
+  width: 80%;
+
   height: 100%;
   margin-bottom: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .project-anchor{
-  margin-bottom: 50%;
+  margin-bottom: 20%;
+}
+
+.project-img{
+  width: 90%;
+  height: 50%;
+  margin: 15px 0px;
+  border-radius: 5px;
+  box-shadow: 5px 2px #147efb, 10px 4px #0464d5, 15px 6px #034ba0, 20px 8px #02326b, 25px 10px #011935;
+}
+
+.project-title{
+  color: #147efb;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#git-link{
+  text-decoration: none;
+  color: #FDFFF5;
+  font-size: 1em;
+  font-weight: normal;
+  border-bottom: 2px solid #147efb;
+}
+
+#tools-wrapper{
+  margin: 15px 0px;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+li{
+  list-style-type: none;
+  border: 2px solid #147efb;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 10px 5px;
 }
 
 /* Navbar */
@@ -120,6 +180,7 @@ nav{
   justify-content: top;
   align-items: center;
   padding: 0px 20px;
+  font-size: 1.5em;
 }
 
 nav > a {
@@ -138,8 +199,7 @@ nav > a {
     ),
     linear-gradient(
       to right,
-      #fc3d39,
-      rgba(255, 0, 180, 1),
+      #147efb,
       #147efb
   );
   background-size: 100% 2px, 0 2px;
