@@ -68,6 +68,11 @@ html, body{
   box-shadow: 5px 2px #147efb, 10px 4px #0464d5, 15px 6px #034ba0, 20px 8px #02326b, 25px 10px #011935;
 }
 
+#grad-highlight{
+  color: red;
+  font-weight: bold;
+}
+
 #currAge{
   font-size: 1em;
   color: #011935;
@@ -191,6 +196,21 @@ div#clock-day > p{
   border-bottom: 2px solid #147efb;
 }
 
+#git-link:hover{
+  color: #147efb;
+}
+
+#git-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#git-logo{
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
 
 #tools-wrapper{
   margin: 15px 0px;

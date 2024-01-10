@@ -14,13 +14,20 @@ function Clock() {
 
     var hours = 0;
     var minutes = 0;
-
-    if(time.getHours() > 12) {
-        hours = time.getHours() - 12;
-    } 
-
+    
     if(time.getHours() < 10){
-        hours = "0" + time.getHours();
+        if(time.getHours() == 0){
+            hours = 12;
+        } else{
+            hours = "0" + time.getHours();
+        }
+    } else {
+        if(time.getHours() > 12) {
+            hours = time.getHours() - 12;
+            
+        } else{
+            hours = time.getHours();
+        }
     }
 
     if(time.getMinutes() < 10){

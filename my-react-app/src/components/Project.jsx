@@ -1,5 +1,5 @@
 import React from "react"
-
+import gitLogo from "../assets/githubLogo.png"
 function Project(prop) {
     const myTools = prop.tools.map((tool) => {
         return (<li>{tool}</li>)
@@ -18,7 +18,10 @@ function Project(prop) {
                     {myTools}
                 </ul>
             </div>
-            <a id="git-link" href={prop.link} target="_blank">{prop.link}</a>
+            <span id="git-container">
+                <img id="git-logo" src={gitLogo} alt="Github Logo"/>
+                <a id="git-link" href={prop.link} target="_blank">{prop.link}</a>
+            </span>
         </div>
     )
 }
