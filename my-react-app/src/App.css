@@ -19,6 +19,7 @@ html, body{
   font-weight: bold;
   color: #147efb;
   margin-top: 10px;
+  border-bottom: 2px solid #1480fb15;
   background:
     linear-gradient(
       to right,
@@ -48,15 +49,17 @@ html, body{
   flex-direction: column;
   justify-content: top;
   align-items: center;
-  border-left: 2px dashed #147efb;
   width: 40vw;
-  height: 100vh;
+  height: calc(100vh - 6px);
   position: absolute;
   right: 0px;
   top: 0px;
   overflow: auto;
   scroll-behavior: smooth;
   overflow:hidden;
+  box-shadow: -2px 0px #147efb, -4px 0px #0464d5, -6px 0px #034ba0, -8px 0px #02326b, -10px 0px #011935;
+  border: 3px solid #147efb;
+  border-radius: 20px 0px 0px 20px;
 }
 
 /* About */
@@ -86,6 +89,7 @@ html, body{
   padding: 18px;
   border-radius: 20px 20px 0px 20px;
   width: 70%;
+  box-shadow: 5px 2px #147efb, 10px 4px #0464d5, 15px 6px #034ba0, 20px 8px #02326b, 25px 10px #011935;
 }
 
 #msg{
@@ -94,6 +98,7 @@ html, body{
   margin-bottom: 100vh;
   margin-top: 5%;
   border: 2px solid gray;
+  box-shadow: 5px 0px gray, 10px 0px #666666, 15px 0px #4d4d4d, 20px 0px #333333 , 25px 0px #1a1a1a;
   padding: 10px;
   border-radius: 20px;
   width: 70%;
@@ -101,6 +106,7 @@ html, body{
 #msg:hover{
   color: #147efb;
   border: 2px solid #147efb;
+  box-shadow: 5px 0px #147efb, 10px 0px #0464d5, 15px 0px #034ba0, 20px 0px #02326b, 25px 0px #011935;
 }
 #profile{
   position: absolute;
@@ -111,7 +117,6 @@ html, body{
 /* Clock */
 #clock-wrapper{
   position: absolute;
-  /*background-color: green;*/
   bottom: 0px;
   height: 40vh;
   width: 60vw;
@@ -271,12 +276,12 @@ nav{
     linear-gradient(
       to right,
       #147efb,
-      #147efb
+      #1480fb5a
   );
   background-size: 100% 2px, 0 2px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  transition: background-size 200ms;
+  transition: background-size 300ms;
 }
 
 .nav-element:hover {
