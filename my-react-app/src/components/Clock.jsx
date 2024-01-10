@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-
+import Calendar from "./Calendar.jsx"
 function Clock() {
 
     const [time, setTime] = useState(new Date());
@@ -45,6 +45,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />    
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -72,6 +73,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -99,6 +101,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -126,6 +129,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -153,6 +157,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -180,6 +185,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -207,6 +213,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -237,6 +244,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -264,6 +272,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -291,6 +300,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -318,6 +328,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -345,6 +356,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -372,6 +384,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>
@@ -399,6 +412,7 @@ function Clock() {
             return(
                 <section id="clock-wrapper">
                     <div id="clock-time">
+                        <Calendar />
                         <p className="time">{hours}</p>
                         <p className="time" id="colon">:</p>
                         <p className="time">{minutes}</p>

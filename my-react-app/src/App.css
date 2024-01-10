@@ -239,24 +239,29 @@ li:hover{
 
 /* Navbar */
 nav{
-  width: 60vw;
   height: 30vh;
   display:flex;
   flex-direction: column;
   justify-content: top;
-  align-items: center;
+  align-items: left;
   padding: 0px 20px;
   font-size: 1.5em;
 }
 
-nav > a {
+#nav-wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+}
+
+.nav-element {
   color: inherit;
   text-decoration: none;
-  margin-bottom: 20px;
   color: #FDFFF5;
 }
 
-nav > a {
+.nav-element {
   background:
     linear-gradient(
       to right,
@@ -274,6 +279,170 @@ nav > a {
   transition: background-size 200ms;
 }
 
-nav > a:hover {
+.nav-element:hover {
   background-size: 0 3px, 100% 3px;
+}
+
+.nav-element-wrapper{
+  margin: 5px 0px;
+}
+
+#nav-arrow-1{
+  width: 20px;
+  height: 20px;
+  animation-duration: 5s;
+  animation-name: arrow-hover-1;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow-hover-1{
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(-10px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  75%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+#nav-arrow-2{
+  width: 20px;
+  height: 20px;
+  animation-duration: 5s;
+  animation-name: arrow-hover-2;
+  animation-iteration-count: infinite;
+  animation-delay: .5s;
+}
+
+@keyframes arrow-hover-2{
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(-10px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  75%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+#nav-arrow-3{
+  width: 20px;
+  height: 20px;
+  animation-duration: 5s;
+  animation-name: arrow-hover-3;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes arrow-hover-3{
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(-10px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  75%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+#nav-arrow-4{
+  width: 20px;
+  height: 20px;
+  animation-duration: 5s;
+  animation-name: arrow-hover-4;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes arrow-hover-4{
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(-10px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  75%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+#nav-arrow-5{
+  width: 20px;
+  height: 20px;
+  animation-duration: 5s;
+  animation-name: arrow-hover-5;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+@keyframes arrow-hover-5{
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(-10px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  75%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+
+
+/* Calendar */
+#calendar-month{
+  color: #FDFFF5;
+  background-color: #147efb;
+  font-size: .7em;
+  padding: 7px;
+  border-bottom: 1px dotted  #FDFFF5;
+}
+
+#calendar-day{
+  color: #147efb;
+  border: 2px solid #147efb;
+  font-size: 1em;
+  padding: 10px;
+
+}
+
+#calendar-wrapper{
+  text-align: center;
+  margin-right: 20px;
+  box-shadow: -2px -2px #147efb, -4px -4px #0464d5, -6px -6px #034ba0, -8px -8px #02326b, -10px -10px #011935;
+  background-color: #011935;
 }
