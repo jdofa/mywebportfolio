@@ -11,7 +11,6 @@ html, body{
 #greeter{
   font-size: 2vw;
   font-weight: bold;
-  
 }
 
 #my-name{
@@ -39,9 +38,8 @@ html, body{
   align-items: center;
   border: none;
   height: 20vh;
-  width: 60vw;
-  /*background-color: red;*/
-  padding: 20px;
+  width: calc(60vw - 10px);
+  padding-top: 20px;
 }
 
 #content{
@@ -84,7 +82,7 @@ html, body{
   50% {
     border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
     box-shadow: 5px 2px #147efb, 10px 4px #0464d5, 15px 6px #034ba0, 20px 8px #02326b, 25px 10px #011935;  
-   }
+  }
   75% {
     border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;	
     box-shadow: 5px 2px #147efb, 10px 4px #0464d5, 15px 6px #034ba0, 20px 8px #02326b, 25px 10px #011935;  
@@ -92,7 +90,7 @@ html, body{
   100%{
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow: 5px 2px #147efb, 10px 4px #0464d5, 15px 6px #034ba0, 20px 8px #02326b, 25px 10px #011935;  
-   }
+  }
 }
 
 #grad-highlight{
@@ -143,7 +141,7 @@ html, body{
   position: absolute;
   bottom: 0px;
   height: 40vh;
-  width: 60vw;
+  width: calc(60vw - 10px);
 
   font-size: 1.5em;
 }
@@ -281,7 +279,8 @@ nav{
   display:flex;
   justify-content: center;
   align-items: center;
-  width: 60vw;
+  width: calc(60vw - 10px);
+  padding-top: 15px;
 }
 
 .nav-element {
@@ -475,3 +474,40 @@ nav{
   box-shadow: -2px 0px #147efb, -4px 0px #0464d5, -6px 0px #034ba0, -8px 0px #02326b, -10px 0px #011935;
   background-color: #011935;
 }
+
+/* For Mobile Phones 
+ -Note: all: unset; is used to remove all the default styling of the element
+*/
+@media screen and (max-width: 480px){
+  #greeter{
+    font-size: 4vw;
+  }
+  #my-name{
+    font-size: 8vw;
+  }
+  #nav-wrapper{
+    width: 100vw;
+    font-size: 1em;
+    padding: 0px;
+    height: 30vh;
+  }
+  #hero{
+    height: 12vh;
+    width: 100vw;
+    padding: 0px;
+  }
+  #content{
+    position: relative;
+    width: 100vw;
+    border: none;
+    box-shadow: none;
+    height: 55vh;
+  }
+  #clock-wrapper{
+    display: none;
+  }
+}
+
+
+
+

@@ -17,7 +17,6 @@ function App() {
         <h2 id="my-name">Jose Rodolfo Nieblas</h2>
       </div>
       <Navbar />
-      <Clock />
       <section id="content">
         <About />
         <Project 
@@ -48,6 +47,7 @@ function App() {
         tools={["Python3", "Threading", "Web Sockets"]}
         />
       </section>
+      <Clock />
     </>
   )
 }
