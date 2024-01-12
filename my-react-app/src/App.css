@@ -4,12 +4,12 @@
 
 html, body{
   font-family:IBM Plex Sans, helvetica;
-  background-color: #242526;
+  background-color: #011935;
   color: #FDFFF5;
 }
 
 #greeter{
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: bold;
 }
 
@@ -44,16 +44,37 @@ html, body{
 
 #content{
   width: 40vw;
-  height: calc(100vh - 6px);
+  height: 100vh;
   position: absolute;
   right: 0px;
   top: 0px;
-  overflow: auto;
   scroll-behavior: smooth;
   overflow:hidden;
   box-shadow: -2px 0px #147efb, -4px 0px #0464d5, -6px 0px #034ba0, -8px 0px #02326b, -10px 0px #011935;
-  border: 3px solid #147efb;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 0px 0px 0px 0px;
+  animation: blue-fade 11s ease-in-out infinite;
+}
+
+@keyframes blue-fade{
+  0%{
+    background-color: #011935;
+  }
+  25%{
+    background-color: #02326b;
+  }
+  50%{
+    background-color: #011935;
+  }
+  75%{
+    background-color: #02326b;
+  }
+  100%{
+    background-color: #011935;
+  }
+}
+
+#content:hover{
+  animation-play-state: paused;
 }
 
 /* About */
@@ -107,15 +128,15 @@ html, body{
   padding: 20px;
   border-radius: 20px 20px 0px 20px;
   width: 70%;
-  box-shadow: 5px 2px #147efb, 10px 4px #0464d5, 15px 6px #034ba0, 20px 8px #02326b, 25px 10px #011935;
+  box-shadow: 5px 0px #0464d5, 10px 0px #034ba0, 15px 0px #02326b, 20px 0px #011935;
 }
 
 #msg{
   text-decoration: none;
   color: gray;
   border: 2px solid gray;
-  box-shadow: 5px 0px gray, 10px 0px #666666, 15px 0px #4d4d4d, 20px 0px #333333 , 25px 0px #1a1a1a;
-  padding: 10px;
+  box-shadow: 5px 0px #666666, 10px 0px #4d4d4d, 15px 0px #333333 , 20px 0px #1a1a1a;
+  padding: 10px 20px;
   border-radius: 20px;
   width: 70%;
   margin: 20px auto;
@@ -123,7 +144,7 @@ html, body{
 #msg:hover{
   color: #147efb;
   border: 2px solid #147efb;
-  box-shadow: 5px 0px #147efb, 10px 0px #0464d5, 15px 0px #034ba0, 20px 0px #02326b, 25px 0px #011935;
+  box-shadow: 5px 0px #0464d5, 10px 0px #034ba0, 15px 0px #02326b, 20px 0px #011935;
 }
 #profile{
   position: relative;
@@ -171,7 +192,7 @@ html, body{
 }
 
 div#clock-day > p{
-  margin-left: 20px;
+  margin: 0px 10px;
 }
 
 #colon{
@@ -527,8 +548,8 @@ nav{
     font-size: 1em;
   }
   #profile-pic{
-    width: 30vw;
-    height: 45vw;
+    width: 40vw;
+    height: 60vw;
   }
  #project-description{
     font-size: .8em;
