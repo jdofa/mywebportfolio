@@ -7,11 +7,10 @@ function Project(prop) {
 
     return(
         <div className="project-wrapper">
-            <p className="project-anchor" id={prop.anchor}></p>
-            <h3 className="project-title">{prop.title}</h3>
+            <h3 id={prop.anchor} className="project-title">{prop.title}</h3>
             <img className="project-img" src={prop.coverImg} alt="Project Cover"/>
             <h3 className="project-title">Description</h3>
-            <p>"{prop.description}"</p>
+            <p id="project-description">"{prop.description}"</p>
             <div id="tools-wrapper">
                 <h3 className="project-title">Tools Used</h3>
                 <ul>
