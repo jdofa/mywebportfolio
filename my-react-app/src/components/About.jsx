@@ -28,7 +28,7 @@ function About() {
                 I have developed a great work ethic and passion for learning new things. I am currently
                 looking for a full-time job in the software industry.
                 </p>
-                <a id="msg" href="mailto: dolfonieblas@gmail.com">Send Message</a>
+                <a id="msg" href="mailto: joserodolfonieblas@gmail.com">Send Message</a>
             </div>
         </>
     )
