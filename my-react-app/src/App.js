@@ -6,6 +6,7 @@ import Project from './components/Project'
 import p1_img from './assets/project1_cover.jpg'
 import p2_img from './assets/project2_cover.jpg'
 import p3_img from './assets/project3_cover.jpg'
+import texture from './assets/texture.jpg'
 
 import './App.css'
 
@@ -18,6 +19,7 @@ function App() {
       </div>
       <Navbar />
       <section id="content">
+        <img id="img-texture" src={texture} alt="space" />
         <About />
         <Project 
         anchor="p1"

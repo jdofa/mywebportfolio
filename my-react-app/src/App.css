@@ -2,15 +2,48 @@
   margin: 0px;
 }
 
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
 html, body{
   font-family:IBM Plex Sans, helvetica;
-  background-color: #011935;
+  background: linear-gradient(180deg, #011935, #034ba0);
+  background-size: 100% 200%;
   color: #FDFFF5;
+}
+
+
+#img-texture{
+  position: absolute;
+  width: 40vw;
+  height: 400%;
+  top: 0px;
+  right: 0px;
+  opacity: .08;
 }
 
 #greeter{
   font-size: 1.5vw;
   font-weight: bold;
+  text-shadow: #011935 3px 3px;
 }
 
 #my-name{
@@ -29,6 +62,7 @@ html, body{
   background-size: 100% 2px, 0 2px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
+  text-shadow: #011935 3px 5px;
 }
 
 #hero{
@@ -51,9 +85,21 @@ html, body{
   scroll-behavior: smooth;
   overflow:hidden;
   box-shadow: -2px 0px #147efb, -4px 0px #0464d5, -6px 0px #034ba0, -8px 0px #02326b, -10px 0px #011935;
-  border-radius: 0px 0px 0px 0px;
-  animation: blue-fade 11s ease-in-out infinite;
+  background: url("assets/square.png") repeat 0 0;
+  -webkit-animation: bg-scrolling 2s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling 2s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling 2s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling 2s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
+
 
 @keyframes blue-fade{
   0%{
@@ -73,9 +119,6 @@ html, body{
   }
 }
 
-#content:hover{
-  animation-play-state: paused;
-}
 
 /* About */
 #profile-pic{
@@ -155,14 +198,48 @@ html, body{
   height: 100vh;
 }
 
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
 /* Clock */
 #clock-wrapper{
   position: absolute;
   bottom: 0px;
   height: 40vh;
   width: calc(60vw - 10px);
-
+  box-shadow: 0px -2px #147efb, 0px -4px #0464d5, 0px -6px #034ba0, 0px -8px #02326b, 0px -10px #011935;
   font-size: 1.5em;
+  background: url("assets/square.png") repeat 0 0;
+  -webkit-animation: bg-scrolling 2s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling 2s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling 2s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling 2s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 #clock-time{
   margin-top: 5vh;
@@ -210,17 +287,11 @@ div#clock-day > p{
   position: relative;
 }
 
-/*
-.project-anchor{
-  margin-bottom: 10%;
-} */
-
 .project-img{
   width: 30vw;
   height: 15vw;
   margin: 15px 0px;
   border-radius: 5px;
-  /*box-shadow: 5px 2px #147efb, 10px 4px #0464d5, 15px 6px #034ba0, 20px 8px #02326b, 25px 10px #011935; */
   box-shadow: .25vw .1vw #147efb, .5vw .2vw #0464d5, .75vw .3vw #034ba0, 1vw .4vw #02326b, 1.25vw .5vw #011935; 
 }
 
@@ -244,9 +315,13 @@ div#clock-day > p{
 }
 
 #project-description{
-  width: 90%;
+  width: calc(90% - 60px);
   margin: 15px auto 0px auto;
   font-size: 1em;
+  background-color: #147efb;
+  border-radius: 20px 20px 0px 20px;
+  box-shadow: 5px 0px #0464d5, 10px 0px #034ba0, 15px 0px #02326b, 20px 0px #011935;
+  padding: 20px;
 }
 
 #git-link{
@@ -292,6 +367,7 @@ li{
   border-radius: 20px;
   padding: 5px 10px;
   margin: 10px 5px;
+  background-color: #011935;
 }
 
 li:hover{
@@ -324,6 +400,7 @@ nav{
 }
 
 .nav-element {
+  text-shadow: #011935 2px 2px;
   background:
     linear-gradient(
       to right,
@@ -524,6 +601,18 @@ nav{
     font-size: 1em;
     padding: 0px;
     height: 30vh;
+    -webkit-animation: bg-scrolling-reverse 2s infinite;
+    /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse 2s infinite;
+    /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse 2s infinite;
+    /* Opera 12+ */
+    animation: bg-scrolling-reverse 2s infinite;
+    /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+     animation-timing-function: linear;
   }
   #hero{
     height: 12vh;
@@ -533,22 +622,46 @@ nav{
   #content{
     position: relative;
     width: 100vw;
-    border: none;
-    box-shadow: none;
+    box-shadow: 0px -2px #147efb, 0px -4px #0464d5, 0px -6px #034ba0, 0px -8px #02326b, 0px -10px #011935;
     height: 100vh;
-    border-top: 2px dashed #147efb;
-    border-bottom: 2px dashed #147efb;
     border-radius: 0px;
     margin-top: 20px;
-  }
-  #content:hover{
-    animation-play-state: running;
+    -webkit-animation: bg-scrolling-reverse 2s infinite;
+    /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse 2s infinite;
+    /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse 2s infinite;
+    /* Opera 12+ */
+    animation: bg-scrolling-reverse 2s infinite;
+    /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+     animation-timing-function: linear;
   }
   #clock-wrapper{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100vw;
-    height: 20vh;
     font-size: 1em;
+    height: 25vh;
+    -webkit-animation: bg-scrolling-reverse 2s infinite;
+    /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse 2s infinite;
+    /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse 2s infinite;
+    /* Opera 12+ */
+    animation: bg-scrolling-reverse 2s infinite;
+    /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+     animation-timing-function: linear;
+  }
+  #clock-time{
+    margin-top: 0px;
   }
   #profile-pic{
     width: 40vw;
@@ -563,6 +676,9 @@ nav{
   }
   #bio{
     font-size: 1em;
+  }
+  #img-texture{
+    width: 100vw;
   }
 }
 
