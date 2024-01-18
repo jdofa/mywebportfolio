@@ -39,13 +39,14 @@ function App() {
           description="A web app that allows users to play checkers against each other locally or against an AI. User data is stored
           and displayed on a global and local leaderboard. User's can also register and login to save their game progress."
           link="https://github.com/jdofa/Checkers130"
-          tools={["Javascript", "DOM API", "PHP", "MySQL", "Apache", "CSS3", "HTML5"]}
+          tools={["Javascript", "DOM API", "PHP", "MySQL", "Apache", "CSS3", "HTML5", "Session & Cookies"]}
         />
         <Project 
           anchor="p3"
           title="Chat Room"
           coverImg = {p3_img}
-          description="A chat room python app that allows users to create chat rooms and chat with other users in real time."
+          description="A chat room made with Python3 that allows users to connect to a server where they
+          can send messages to anyone connected to it, in real time."
           link="https://github.com/jdofa/BreakoutRoom"
           tools={["Python3", "Threading", "Web Sockets"]}
         />
