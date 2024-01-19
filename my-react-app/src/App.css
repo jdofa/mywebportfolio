@@ -47,12 +47,6 @@ html, body{
   opacity: .08;
 }
 
-#greeter{
-  font-size: 1.5vw;
-  font-weight: bold;
-  text-shadow: #011935 3px 3px;
-}
-
 #my-name{
   font-size: 5vw;
   font-weight: bold;
@@ -310,7 +304,7 @@ div#clock-day > p{
 }
 
 .project-title{
-  color: #147efb;
+  color: #FDFFF5;
   font-weight: bold;
   font-size: 1.5em;
   padding-top: 15px;
@@ -449,6 +443,15 @@ nav{
   width: 25px;
   height: 25px;
   margin: 0px 10px;
+  border-radius: 30%;
+  border: 2px solid #147efb;
+  background-color: #147efb;
+  padding: 2px;
+}
+
+.nav-logos:hover{
+  border-color: #FDFFF5;
+
 }
 #nav-arrow-1{
   width: 20px;
@@ -616,10 +619,6 @@ nav{
 @media screen and (max-width: 480px){
   html, body{
     background-size: 100% 100%;
-  }
-  #greeter{
-    font-size: 4vw;
-    text-shadow: none;
   }
   #my-name{
     font-size: 8vw;

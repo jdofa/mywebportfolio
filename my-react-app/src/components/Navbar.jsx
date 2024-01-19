@@ -5,6 +5,20 @@ import linkedInLogo from "../assets/linkedin_logo.png"
 import githubLogo from "../assets/githubLogo.png"
 import emailLogo from "../assets/email_logo.png"
 
+/* Make each link turn blue when on that page
+const currURL = window.location.href;
+const urlArr = currURL.split("/");
+var currLink = urlArr[urlArr.length - 1];
+
+const blue = {
+    color: '#147efb'
+};
+
+const white = {
+    color: '#FDFFF5'
+};
+*/
+
 function Navbar() {
     return(
         <div id="nav-wrapper">

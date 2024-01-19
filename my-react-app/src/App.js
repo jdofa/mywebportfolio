@@ -14,7 +14,6 @@ function App() {
   return (
     <>
       <div id="hero">
-        <h1 id="greeter">Hi, my name is...</h1>
         <h2 id="my-name">Jose Rodolfo Nieblas</h2>
       </div>
       <Navbar />
