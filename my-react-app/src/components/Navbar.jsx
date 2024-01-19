@@ -22,26 +22,29 @@ const white = {
 function Navbar() {
     return(
         <div id="nav-wrapper">
+            <h2 id="my-name">Jose Rodolfo Nieblas</h2>
             <nav>
-                <div className="nav-element-wrapper">
-                    <img id="nav-arrow-1" src={arrow} alt="arrow selector"/>
-                    <a className="nav-element" href="#profile">About Me</a>
-                </div>
-                <div className="nav-element-wrapper">
-                    <img id="nav-arrow-2" src={arrow} alt="arrow selector"/>
-                    <a className="nav-element" href={pdf} target="_blank" rel="noreferrer">Grab Resume</a>
-                </div>
-                <div className="nav-element-wrapper">
-                    <img id="nav-arrow-3" src={arrow} alt="arrow selector"/>
-                    <a className="nav-element" href="#p1">Project 1</a>
-                </div>
-                <div className="nav-element-wrapper">
-                    <img id="nav-arrow-4" src={arrow} alt="arrow selector"/>
-                    <a className="nav-element" href="#p2">Project 2</a>
-                </div>
-                <div className="nav-element-wrapper">
-                    <img id="nav-arrow-5" src={arrow} alt="arrow selector"/>
-                    <a className="nav-element" href="#p3">Project 3</a>
+                <div id="nav-links-wrapper">
+                    <div className="nav-element-wrapper">
+                        <img id="nav-arrow-1" src={arrow} alt="arrow selector"/>
+                        <a className="nav-element" href="#profile">About Me</a>
+                    </div>
+                    <div className="nav-element-wrapper">
+                        <img id="nav-arrow-2" src={arrow} alt="arrow selector"/>
+                        <a className="nav-element" href={pdf} target="_blank" rel="noreferrer">Grab Resume</a>
+                    </div>
+                    <div className="nav-element-wrapper">
+                        <img id="nav-arrow-3" src={arrow} alt="arrow selector"/>
+                        <a className="nav-element" href="#p1">Project 1</a>
+                    </div>
+                    <div className="nav-element-wrapper">
+                        <img id="nav-arrow-4" src={arrow} alt="arrow selector"/>
+                        <a className="nav-element" href="#p2">Project 2</a>
+                    </div>
+                    <div className="nav-element-wrapper">
+                        <img id="nav-arrow-5" src={arrow} alt="arrow selector"/>
+                        <a className="nav-element" href="#p3">Project 3</a>
+                    </div>
                 </div>
                 <div id="nav-element-logos">
                     <a href="https://www.linkedin.com/in/jose-nieblas-b96b4a25a/" target="_blank" rel="noreferrer">

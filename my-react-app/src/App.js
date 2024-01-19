@@ -13,9 +13,6 @@ import './App.css'
 function App() {
   return (
     <>
-      <div id="hero">
-        <h2 id="my-name">Jose Rodolfo Nieblas</h2>
-      </div>
       <Navbar />
       <Clock />
       <section id="content">
