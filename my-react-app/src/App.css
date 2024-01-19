@@ -61,11 +61,10 @@ html, body{
 #my-name{
   font-size: 5vw;
   font-weight: bold;
-  color: #147efb;
   margin-top: 10px;
-  border-bottom: 2px solid #1480fb15;
+  color: #71bbed;
   background:
-    linear-gradient(
+    linear-gradient(  
       to right,
       #1480fb00,
       #147efb,
@@ -74,7 +73,6 @@ html, body{
   background-size: 100% 2px, 0 2px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  text-shadow: #FDFFF5 2px 2px;
 }
 
 #hero{
@@ -412,11 +410,53 @@ nav{
   border-bottom: none;
   padding: 0px 20px;
   margin-top: 20px;
+  border-radius: 0%;
+  animation: border-flatten-top .2s;
 }
+@keyframes border-flatten-top{
+  0%{
+    border-radius: 4% 4% 0% 0%;
+  }
+  25%{
+    border-radius: 3% 3% 0% 0%;
+  }
+  50%{
+    border-radius: 2% 2% 0% 0%;
+  }
+  75%{
+    border-radius: 1% 1% 0% 0%;
+  }
+  100%{
+    border-radius: 0% 0% 0% 0%;
+  }
+}
+
+#nav-links-wrapper:hover{
+  animation: border-curve-top .2s;
+  border-radius: 4% 4% 0% 0%;
+}
+@keyframes border-curve-top{
+  0%{
+    border-radius: 0% 0% 0% 0%;
+  }
+  25%{
+    border-radius: 1% 1% 0% 0%;
+  }
+  50%{
+    border-radius: 2% 2% 0% 0%;
+  }
+  75%{
+    border-radius: 3% 3% 0% 0%;
+  }
+  100%{
+    border-radius: 4% 4% 0% 0%;
+  }
+}
+
 #nav-wrapper{
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
   width: calc(60vw - 54px); /* 54px = 20px + 20px + 2px + 2px + 10px <-- The ten subtracts the right border */
   height: calc(70vh - 44px);
@@ -429,11 +469,10 @@ nav{
 .nav-element {
   color: inherit;
   text-decoration: none;
-  color: #FDFFF5;
+  color: #71bbed;
 }
 
 .nav-element {
-  text-shadow: #147efb 1px 1px;
   background:
     linear-gradient(
       to right,
@@ -456,33 +495,136 @@ nav{
 }
 
 .nav-element-wrapper{
-  margin: 5px 0px;
+  margin: 8px 0px;
 }
 #nav-element-logos{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 8px 0px;
   border: 1px solid #147efb;
   border-top: none;
-  width: 100%;
-  padding-bottom: 5px;
+  width: calc(100% - 1.5px);
+  padding: 10px 0px;
+  border-radius: 0px;
+  animation: border-flatten-bottom .2s;
+  background-color: rgba(20, 128, 251, 0.4);
+}
+@keyframes border-flatten-bottom{
+  0%{
+    border-radius: 0px 0px 8px 8px;
+    background-color: rgba(20, 128, 251, 0.2);
+  }
+  25%{
+    border-radius: 0px 0px 6px 6px;
+    background-color: rgba(20, 128, 251, .25);
+  }
+  50%{
+    border-radius: 0px 0px 4px 4px;
+    background-color: rgba(20, 128, 251, 0.3);
+  }
+  75%{
+    border-radius: 0px 0px 2px 2px;
+    background-color: rgba(20, 128, 251, 0.35);
+  }
+  100%{
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgba(20, 128, 251, 0.4);
+  }
+}
+
+#nav-element-logos:hover{
+  animation: border-curve-bottom .2s;
+  border-radius: 0px 0px 8px 8px;
+  background-color: rgba(20, 128, 251, 0.2);
+}
+@keyframes border-curve-bottom{
+  0%{
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgba(20, 128, 251, 0.4);
+  }
+  25%{
+    border-radius: 0px 0px 2px 2px;
+    background-color: rgba(20, 128, 251, 0.35);
+  }
+  50%{
+    border-radius: 0px 0px 4px 4px;
+    background-color: rgba(20, 128, 251, 0.30);
+  }
+  75%{
+    border-radius: 0px 0px 6px 6px;
+    background-color: rgba(20, 128, 251, 0.25);
+  }
+  100%{
+    border-radius: 0px 0px 8px 8px;
+    background-color: rgba(20, 128, 251, 0.2);
+  }
 }
 .nav-logos{
   width: 25px;
   height: 25px;
   margin: 0px 10px;
+  margin-top: 5px;
   border-radius: 30%;
   border: 2px solid #147efb;
   background-color: #147efb;
   padding: 2px;
+  animation: square .2s;
+  border-color: #147efb;
+}
+
+@keyframes square{
+  0%{
+    border-radius: 50%;
+    border-color: #FDFFF5;
+  }
+  25%{
+    border-radius: 45%;
+    border-color: #FDFFF5;
+  }
+  50%{
+    border-radius: 40%;
+    border-color: #7cb8fd;
+  }
+  75%{
+    border-radius: 35%;
+    border-color: #147efb;
+  }
+  100%{
+    border-radius: 30%;
+    border-color: #147efb;
+  }
 }
 
 .nav-logos:hover{
   border-color: #FDFFF5;
-
+  border-radius: 50%;
+  animation: round .2s;
 }
+
+@keyframes round{
+  0%{
+    border-radius: 30%;
+    border-color: #147efb;
+  }
+  25%{
+    border-radius: 35%;
+    border-color: #147efb;
+  }
+  50%{
+    border-radius: 40%;
+    border-color: #7cb8fd;
+  }
+  75%{
+    border-radius: 45%;
+    border-color: #FDFFF5;
+  }
+  100%{
+    border-radius: 50%;
+    border-color: #FDFFF5;
+  }
+}
+
 #nav-arrow-1{
   width: 20px;
   height: 20px;
@@ -649,7 +791,8 @@ nav{
 @media screen and (max-width: 480px){
   #my-name{
     font-size: 8vw;
-    text-shadow: none;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
   }
   #nav-wrapper{
     margin-top: 15px;
@@ -671,9 +814,6 @@ nav{
     -moz-animation-timing-function: linear;
     -o-animation-timing-function: linear;
      animation-timing-function: linear;
-  }
-  .nav-element{
-    text-shadow: none;
   }
   #content{
     position: relative;
