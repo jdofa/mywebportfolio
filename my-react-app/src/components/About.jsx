@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import profilePic from "../assets/me.jpg"
 
 function About() {
-    var birthDate = new Date("1999-01-25T12:00:00");
+    var birthDate = new Date("1999-01-31T00:00:00");
     var diff = Math.abs(new Date() - birthDate);
     var myAge = diff / 31536000000;
 
