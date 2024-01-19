@@ -176,7 +176,7 @@ html, body{
 #bio{
   text-align: center;
   font-size: 1em;
-  margin-top: 40px;
+  margin-top: 20px;
   background-color: #147efb;
   padding: 20px;
   border-radius: 20px 20px 0px 20px;
@@ -198,6 +198,12 @@ html, body{
   color: #147efb;
   border: 2px solid #147efb;
   box-shadow: 5px 0px #0464d5, 10px 0px #034ba0, 15px 0px #02326b, 20px 0px #011935;
+}
+
+#profile-title{
+  margin-top: 20px;
+  color: #71bbed;
+  font-size: 1.5em;
 }
 #profile{
   position: relative;

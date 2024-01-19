@@ -20,6 +20,7 @@ function About() {
         <>
             <div id="profile">
                 <img id="profile-pic" src={profilePic} alt="Jose's Profile Picture" />
+                <h1 id="profile-title">Software Developer</h1>
                 <p id="bio">I am currently <span id="currAge">{currentAge.toFixed(9)}</span> years old and a recent graduate from 
                 Fresno State University with a Bachelor's in Computer Science. 
                 I grew up in Dinuba, CA where my early years were marked by challenging jobs in agriculture and factories, molding me into a resilient individual.
