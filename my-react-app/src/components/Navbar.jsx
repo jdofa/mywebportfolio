@@ -35,7 +35,7 @@ function Navbar() {
                         <img id="nav-arrow-2" src={arrow} alt="arrow selector"/>
                         <a 
                             onClick={() => setNav({about: true, p1: false, p2: false, p3: false})}
-                            style={navElements.about == true ? white : lightBlue} 
+                            style={navElements.about === true ? white : lightBlue} 
                             className="nav-element" 
                             href="#profile">
                         About Me</a>
@@ -44,7 +44,7 @@ function Navbar() {
                         <img id="nav-arrow-3" src={arrow} alt="arrow selector"/>
                         <a 
                             onClick={() => setNav({about: false, p1: true, p2: false, p3: false})}
-                            style={navElements.p1 == true ? white : lightBlue} 
+                            style={navElements.p1 === true ? white : lightBlue} 
                             className="nav-element" 
                             href="#p1">
                         Project 1</a>
@@ -53,7 +53,7 @@ function Navbar() {
                         <img id="nav-arrow-4" src={arrow} alt="arrow selector"/>
                         <a 
                             onClick={() => setNav({about: false, p1: false, p2: true, p3: false})}
-                            style={navElements.p2 == true ? white : lightBlue} 
+                            style={navElements.p2 === true ? white : lightBlue} 
                             className="nav-element" 
                             href="#p2">
                         Project 2</a>
@@ -62,7 +62,7 @@ function Navbar() {
                         <img id="nav-arrow-5" src={arrow} alt="arrow selector"/>
                         <a 
                             onClick={() => setNav({about: false, p1: false, p2: false, p3: true})}
-                            style={navElements.p3 == true ? white : lightBlue} 
+                            style={navElements.p3 === true ? white : lightBlue} 
                             className="nav-element" 
                             href="#p3">
                         Project 3</a>

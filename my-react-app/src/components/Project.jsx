@@ -23,7 +23,7 @@ function Project(prop) {
             </div>
             <span id="git-container">
                 <img id="git-logo" src={gitLogo} alt="Github Logo"/>
-                <a id="git-link" href={prop.link} target="_blank">{prop.link}</a>
+                <a id="git-link" href={prop.link} target="_blank" rel="noreferrer">{prop.link}</a>
             </span>
         </div>
     )

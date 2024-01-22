@@ -48,13 +48,13 @@ function Clock() {
                     </div>
                 </div>
                 <div id="clock-day">
-                    <p style={time.getDay() == 1 ? blue : white}>mon</p>
-                    <p style={time.getDay() == 2 ? blue : white}>tue</p>
-                    <p style={time.getDay() == 3 ? blue : white}>wed</p>
-                    <p style={time.getDay() == 4 ? blue : white}>thu</p>
-                    <p style={time.getDay() == 5 ? blue : white}>fri</p>
-                    <p style={time.getDay() == 6 ? blue : white}>sat</p>
-                    <p style={time.getDay() == 0 ? blue : white}>sun</p>
+                    <p style={time.getDay() === 1 ? blue : white}>mon</p>
+                    <p style={time.getDay() === 2 ? blue : white}>tue</p>
+                    <p style={time.getDay() === 3 ? blue : white}>wed</p>
+                    <p style={time.getDay() === 4 ? blue : white}>thu</p>
+                    <p style={time.getDay() === 5 ? blue : white}>fri</p>
+                    <p style={time.getDay() === 6 ? blue : white}>sat</p>
+                    <p style={time.getDay() === 0 ? blue : white}>sun</p>
                 </div>
             </div>
         </section>
