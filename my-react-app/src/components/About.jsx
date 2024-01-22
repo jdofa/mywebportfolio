@@ -2,19 +2,16 @@ import React, { useState, useEffect } from "react"
 import profilePic from "../assets/me.jpg"
 
 function About() {
-    var birthDate = new Date("1999-01-31T00:00:00");
-    var diff = Math.abs(new Date() - birthDate);
-    var myAge = diff / 31536000000;
 
-    const [currentAge, setTime] = useState(myAge);
+    const [currentAge, setTime] = useState(0); 
 
     useEffect(() => {
         const interval = setInterval(() => {
-        setTime(Math.abs(new Date() - birthDate) / 31536000000);
+        setTime(Math.abs(new Date() - new Date("1999-01-31T00:00:00")) / 31536000000);
         }, 1);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [currentAge]);
 
     return(
         <>

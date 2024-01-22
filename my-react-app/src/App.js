@@ -19,7 +19,6 @@ function App() {
         <img id="img-texture" src={texture} alt="Background Texture" />
         <About />
         <Project 
-          anchor="p1"
           title="License Plate Scanner"
           coverImg = {p1_img}
           description="This project was created for my Sofware Engineering class, where I was the frontend developer. 
@@ -27,24 +26,25 @@ function App() {
           enforcer's would scan the user's license plate to see if they had a valid permit."
           link="https://github.com/150-lab2/License_Plate_Scanner"
           tools={["JavaScript", "CSS3", "HTML5", "Figma", "UML", "SRS", "SDD", "Git", "Waterfall Model"]}
+          anchor="p1"
         />
         <Project 
-          anchor="p2"
           title="Checkers Web App"
           coverImg = {p2_img}
           description="A web app that allows users to play checkers against each other locally or against an AI. User data is stored
           and displayed on a global and local leaderboard. User's can also register and login to save their game progress."
           link="https://github.com/jdofa/Checkers130"
           tools={["Javascript", "DOM API", "PHP", "MySQL", "Apache", "CSS3", "HTML5", "Session & Cookies"]}
+          anchor="p2"
         />
         <Project 
-          anchor="p3"
           title="Chat Room"
           coverImg = {p3_img}
           description="A chat room made with Python3 that allows users to connect to a server where they
           can send messages to anyone connected to it, in real time."
           link="https://github.com/jdofa/BreakoutRoom"
           tools={["Python3", "Threading", "Web Sockets"]}
+          anchor="p3"
         />
       </section>
     </>
