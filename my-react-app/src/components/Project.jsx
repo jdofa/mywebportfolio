@@ -10,8 +10,8 @@ function Project(prop) {
     })
 
     return(
-        <div className="project-wrapper" id={prop.anchor}>
-            <h3 className="project-title">{prop.title}</h3>
+        <div className="project-wrapper">
+            <h3 id={prop.anchor} className="project-title">{prop.title}</h3>
             <img className="project-img" src={prop.coverImg} alt="Project Cover"/>
             <h3 className="project-title">Description</h3>
             <p id="project-description">"{prop.description}"</p>
