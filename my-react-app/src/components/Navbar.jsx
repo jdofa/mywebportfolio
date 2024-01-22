@@ -10,7 +10,7 @@ function Navbar() {
     const [navElements, setNav] = useState({about: true, p1: false, p2: false, p3: false});
    
     const lightBlue = {
-        color: '#71bbed'
+        color: '#147efb'
     };
 
     const white = {

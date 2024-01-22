@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Calendar from "./Calendar.jsx"
-import texture from "../assets/texture.jpg"
+
 function Clock() {
 
     const [time, setTime] = useState(new Date());
@@ -35,7 +35,6 @@ function Clock() {
 
     return(
         <section id="clock-wrapper">
-            <img id="img-texture-2" src={texture} alt="Background Texture" />
             <div id="clock-items">
                 <div id="clock-time">
                     <Calendar />    

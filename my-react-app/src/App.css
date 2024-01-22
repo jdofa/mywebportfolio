@@ -51,18 +51,11 @@ html, body{
   opacity: .08;
 }
 
-#img-texture-2{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: .08;
-}
-
 #my-name{
   font-size: 5vw;
   font-weight: bold;
   margin-top: 10px;
-  color: #71bbed;
+  color: #147efb;
   background:
     linear-gradient(  
       to right,
@@ -201,7 +194,7 @@ html, body{
 
 #profile-title{
   margin-top: 20px;
-  color: #71bbed;
+  color: #FDFFF5;
   font-size: 1.5em;
 }
 #profile{
@@ -256,6 +249,17 @@ html, body{
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
 }
+#clock-items{
+  display: flex;
+  background-color: #011935bd;
+  border: 2px solid #147efb;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  margin: 18px auto;
+}
 #clock-time{
   display: flex;
   flex-direction: row;
@@ -273,14 +277,6 @@ html, body{
   margin-left: 20px;
 }
 
-#clock-items{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
 
 #clock-day{
   display: flex;
@@ -298,9 +294,7 @@ div#clock-day > p{
   margin: 0px 10px;
 }
 
-.temp{
-  color: #147efb;
-}
+
 
 /* Project */
 .project-wrapper{
@@ -471,7 +465,7 @@ nav{
 .nav-element {
   color: inherit;
   text-decoration: none;
-  color: #71bbed;
+  color: #147efb;
 }
 
 .nav-element {
@@ -843,6 +837,7 @@ nav{
     width: 100vw;
     font-size: 1em;
     height: 25vh;
+    
     -webkit-animation: bg-scrolling-reverse 2s infinite;
     /* Safari 4+ */
     -moz-animation: bg-scrolling-reverse 2s infinite;
@@ -855,6 +850,9 @@ nav{
     -moz-animation-timing-function: linear;
     -o-animation-timing-function: linear;
      animation-timing-function: linear;
+  }
+  #clock-items{
+    margin: auto auto;
   }
   #clock-time{
     margin-top: 0px;
