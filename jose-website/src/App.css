@@ -813,7 +813,8 @@ nav{
   #content{
     position: relative;
     width: 100vw;
-    box-shadow: 0px -2px #147efb, 0px -4px #0464d5, 0px -6px #034ba0, 0px -8px #02326b, 0px -10px #011935;
+    /*box-shadow: 0px -2px #147efb, 0px -4px #0464d5, 0px -6px #034ba0, 0px -8px #02326b, 0px -10px #011935;*/
+    border-top: 2px dashed #147efb;
     height: 100vh;
     border-radius: 0px;
     -webkit-animation: bg-scrolling-reverse 2s infinite;
@@ -858,8 +859,8 @@ nav{
     margin-top: 0px;
   }
   #profile-pic{
-    width: 40vw;
-    height: 60vw;
+    width: 30vw;
+    height: 45vw;
   }
  #project-description{
     font-size: .8em;
