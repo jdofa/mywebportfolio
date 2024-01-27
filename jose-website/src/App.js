@@ -6,7 +6,6 @@ import Project from './components/Project'
 import p1_img from './assets/project1_cover.jpg'
 import p2_img from './assets/project2_cover.jpg'
 import p3_img from './assets/project3_cover.jpg'
-import texture from './assets/texture.jpg'
 
 import './App.css'
 
@@ -16,7 +15,6 @@ function App() {
       <Navbar />
       <Clock />
       <section id="content">
-        <img id="img-texture" src={texture} alt="Background Texture" />
         <About />
         <Project 
           title="License Plate Scanner"

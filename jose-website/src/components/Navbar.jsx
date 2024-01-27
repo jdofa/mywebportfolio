@@ -8,9 +8,10 @@ import emailLogo from "../assets/email_logo.png"
 function Navbar() {
 
     const [navElements, setNav] = useState({about: true, p1: false, p2: false, p3: false});
+    const [resumeClicked, setResumeClicked] = useState(false);
    
     const lightBlue = {
-        color: '#147efb'
+        color: '#00b3ff'
     };
 
     const white = {
@@ -25,11 +26,12 @@ function Navbar() {
                     <div className="nav-element-wrapper">
                         <img id="nav-arrow-1" src={arrow} alt="arrow selector"/>
                         <a 
+                            onClick={() => setResumeClicked(true)}
                             className="nav-element" 
                             href={pdf} 
                             target="_blank" 
                             rel="noreferrer">
-                        Grab Resume</a>
+                        {resumeClicked === true ? "Resume Grabbed" : "Grab Resume"}</a>
                     </div>
                     <div className="nav-element-wrapper">
                         <img id="nav-arrow-2" src={arrow} alt="arrow selector"/>
